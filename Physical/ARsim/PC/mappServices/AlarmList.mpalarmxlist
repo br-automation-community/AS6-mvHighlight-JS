@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gAlarmXList" Type="mpalarmxlist">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="BoilerPermanentLoad" />
+        <Property ID="Message" Value="{$IAT/AlarmTexts/BoilerPerLoadID}" />
+        <Property ID="Code" Value="0" />
+        <Property ID="Severity" Value="25" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Property ID="AutoReset" Value="FALSE" />
+          <Property ID="Acknowledge" Value="1" />
+          <Property ID="Confirm" Value="0" />
+          <Property ID="MultipleInstances" Value="TRUE" />
+          <Property ID="ReactionWhilePending" Value="TRUE" />
+          <Group ID="Recording">
+            <Property ID="InactiveToActive" Value="TRUE" />
+            <Property ID="ActiveToInactive" Value="FALSE" />
+            <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+            <Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+            <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            <Property ID="ConfirmedToUnconfirmed" Value="FALSE" />
+            <Property ID="Update" Value="FALSE" />
+          </Group>
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Heating:Kachel[0].SetTemp" />
+            <Property ID="Exclusive" Value="TRUE" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="11" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="LowLowLimitEnable" Value="Disabled" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="200" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="HighHighLimitEnable" Value="Disabled" />
+            <Selector ID="Settings" Value="0">
+              <Property ID="Delay" Value="0.0" />
+              <Property ID="Hysteresis" Value="0.0" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="Disable" Value="FALSE" />
+        <Property ID="InhibitPV" />
+        <Property ID="AdditionalInformation1" />
+        <Property ID="AdditionalInformation2" />
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="ForwardHeating" />
+        <Property ID="Message" Value="{$IAT/AlarmTexts/ForwardHeatingID}" />
+        <Property ID="Code" Value="0" />
+        <Property ID="Severity" Value="30" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Property ID="AutoReset" Value="FALSE" />
+          <Property ID="Acknowledge" Value="1" />
+          <Property ID="Confirm" Value="0" />
+          <Property ID="MultipleInstances" Value="TRUE" />
+          <Property ID="ReactionWhilePending" Value="TRUE" />
+          <Group ID="Recording">
+            <Property ID="InactiveToActive" Value="TRUE" />
+            <Property ID="ActiveToInactive" Value="FALSE" />
+            <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+            <Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+            <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            <Property ID="ConfirmedToUnconfirmed" Value="FALSE" />
+            <Property ID="Update" Value="FALSE" />
+          </Group>
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Heating:Kachel[1].SetTemp" />
+            <Property ID="Exclusive" Value="TRUE" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="11" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="LowLowLimitEnable" Value="Disabled" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="200" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="HighHighLimitEnable" Value="Disabled" />
+            <Selector ID="Settings" Value="0">
+              <Property ID="Delay" Value="0.0" />
+              <Property ID="Hysteresis" Value="0.0" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="Disable" Value="FALSE" />
+        <Property ID="InhibitPV" />
+        <Property ID="AdditionalInformation1" />
+        <Property ID="AdditionalInformation2" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="ReturnCooling" />
+        <Property ID="Message" Value="{$IAT/AlarmTexts/ReturnCoolingID}" />
+        <Property ID="Code" Value="0" />
+        <Property ID="Severity" Value="35" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Property ID="AutoReset" Value="FALSE" />
+          <Property ID="Acknowledge" Value="1" />
+          <Property ID="Confirm" Value="0" />
+          <Property ID="MultipleInstances" Value="TRUE" />
+          <Property ID="ReactionWhilePending" Value="TRUE" />
+          <Group ID="Recording">
+            <Property ID="InactiveToActive" Value="TRUE" />
+            <Property ID="ActiveToInactive" Value="FALSE" />
+            <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+            <Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+            <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            <Property ID="ConfirmedToUnconfirmed" Value="FALSE" />
+            <Property ID="Update" Value="FALSE" />
+          </Group>
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Heating:Kachel[2].SetTemp" />
+            <Property ID="Exclusive" Value="TRUE" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="11" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="LowLowLimitEnable" Value="Disabled" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="200" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="HighHighLimitEnable" Value="Disabled" />
+            <Selector ID="Settings" Value="0">
+              <Property ID="Delay" Value="0.0" />
+              <Property ID="Hysteresis" Value="0.0" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="Disable" Value="FALSE" />
+        <Property ID="InhibitPV" />
+        <Property ID="AdditionalInformation1" />
+        <Property ID="AdditionalInformation2" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="BoilerHeating" />
+        <Property ID="Message" Value="{$IAT/AlarmTexts/BoilerHeatingID}" />
+        <Property ID="Code" Value="0" />
+        <Property ID="Severity" Value="20" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Property ID="AutoReset" Value="FALSE" />
+          <Property ID="Acknowledge" Value="1" />
+          <Property ID="Confirm" Value="0" />
+          <Property ID="MultipleInstances" Value="TRUE" />
+          <Property ID="ReactionWhilePending" Value="TRUE" />
+          <Group ID="Recording">
+            <Property ID="InactiveToActive" Value="TRUE" />
+            <Property ID="ActiveToInactive" Value="FALSE" />
+            <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+            <Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+            <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            <Property ID="ConfirmedToUnconfirmed" Value="FALSE" />
+            <Property ID="Update" Value="FALSE" />
+          </Group>
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Heating:Kachel[3].SetTemp" />
+            <Property ID="Exclusive" Value="TRUE" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="11" />
+              <Property ID="LimitText" Value="" />
+            </Selector>
+            <Selector ID="LowLowLimitEnable" Value="Disabled" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="200" />
+              <Property ID="LimitText" Value="" />
+            </Selector>
+            <Selector ID="HighHighLimitEnable" Value="Disabled" />
+            <Selector ID="Settings" Value="0">
+              <Property ID="Delay" Value="0.0" />
+              <Property ID="Hysteresis" Value="0.0" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="Disable" Value="FALSE" />
+        <Property ID="InhibitPV" />
+        <Property ID="AdditionalInformation1" />
+        <Property ID="AdditionalInformation2" />
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="ForwardHeat" />
+        <Property ID="Message" Value="{$IAT/AlarmTexts/ForwardHeatID}" />
+        <Property ID="Code" Value="0" />
+        <Property ID="Severity" Value="25" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Property ID="AutoReset" Value="FALSE" />
+          <Property ID="Acknowledge" Value="1" />
+          <Property ID="Confirm" Value="0" />
+          <Property ID="MultipleInstances" Value="TRUE" />
+          <Property ID="ReactionWhilePending" Value="TRUE" />
+          <Group ID="Recording">
+            <Property ID="InactiveToActive" Value="TRUE" />
+            <Property ID="ActiveToInactive" Value="FALSE" />
+            <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+            <Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+            <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            <Property ID="ConfirmedToUnconfirmed" Value="FALSE" />
+            <Property ID="Update" Value="FALSE" />
+          </Group>
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Heating:Kachel[4].SetTemp" />
+            <Property ID="Exclusive" Value="TRUE" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="11" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="LowLowLimitEnable" Value="Disabled" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="200" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="HighHighLimitEnable" Value="Disabled" />
+            <Selector ID="Settings" Value="0">
+              <Property ID="Delay" Value="0.0" />
+              <Property ID="Hysteresis" Value="0.0" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="Disable" Value="FALSE" />
+        <Property ID="InhibitPV" />
+        <Property ID="AdditionalInformation1" />
+        <Property ID="AdditionalInformation2" />
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Name" Value="ReturnCool" />
+        <Property ID="Message" Value="{$IAT/AlarmTexts/ReturnCoolID}" />
+        <Property ID="Code" Value="0" />
+        <Property ID="Severity" Value="35" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Property ID="AutoReset" Value="FALSE" />
+          <Property ID="Acknowledge" Value="1" />
+          <Property ID="Confirm" Value="0" />
+          <Property ID="MultipleInstances" Value="TRUE" />
+          <Property ID="ReactionWhilePending" Value="TRUE" />
+          <Group ID="Recording">
+            <Property ID="InactiveToActive" Value="TRUE" />
+            <Property ID="ActiveToInactive" Value="FALSE" />
+            <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+            <Property ID="AcknowledgedToUnacknowledged" Value="FALSE" />
+            <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            <Property ID="ConfirmedToUnconfirmed" Value="FALSE" />
+            <Property ID="Update" Value="FALSE" />
+          </Group>
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Heating:Kachel[5].SetTemp" />
+            <Property ID="Exclusive" Value="TRUE" />
+            <Selector ID="LowLimitEnable" Value="Static">
+              <Property ID="Limit" Value="11" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="LowLowLimitEnable" Value="Disabled" />
+            <Selector ID="HighLimitEnable" Value="Static">
+              <Property ID="Limit" Value="200" />
+              <Property ID="LimitText" />
+            </Selector>
+            <Selector ID="HighHighLimitEnable" Value="Disabled" />
+            <Selector ID="Settings" Value="0">
+              <Property ID="Delay" Value="0.0" />
+              <Property ID="Hysteresis" Value="0.0" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Property ID="Disable" Value="FALSE" />
+        <Property ID="InhibitPV" />
+        <Property ID="AdditionalInformation1" />
+        <Property ID="AdditionalInformation2" />
+      </Group>
+    </Group>
+    <Group ID="mapp.AlarmX.Snippets">
+      <Selector ID="AutoDetect" Value="1">
+        <Property ID="Language" />
+      </Selector>
+      <Group ID="[0]">
+        <Property ID="Key" Value="BoilerPerLoadValue" />
+        <Selector ID="Value" Value="PV">
+          <Property ID="PV" Value="::Heating:Kachel[0].SetTemp" />
+        </Selector>
+        <Property ID="Alarm" />
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Key" Value="ForwardHeatingValue" />
+        <Selector ID="Value" Value="PV">
+          <Property ID="PV" Value="::Heating:Kachel[1].SetTemp" />
+        </Selector>
+        <Property ID="Alarm" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Key" Value="ReturnCoolingValue" />
+        <Selector ID="Value" Value="PV">
+          <Property ID="PV" Value="::Heating:Kachel[2].SetTemp" />
+        </Selector>
+        <Property ID="Alarm" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Key" Value="BoilerHeatingValue" />
+        <Selector ID="Value" Value="PV">
+          <Property ID="PV" Value="::Heating:Kachel[3].SetTemp" />
+        </Selector>
+        <Property ID="Alarm" />
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Key" Value="ForwardHeatValue" />
+        <Selector ID="Value" Value="PV">
+          <Property ID="PV" Value="::Heating:Kachel[4].SetTemp" />
+        </Selector>
+        <Property ID="Alarm" />
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Key" Value="ReturnCoolValue" />
+        <Selector ID="Value" Value="PV">
+          <Property ID="PV" Value="::Heating:Kachel[5].SetTemp" />
+        </Selector>
+        <Property ID="Alarm" />
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

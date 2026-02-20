@@ -1,0 +1,4 @@
+Alarm style (DONE)
+2 apps
+HDA configuration (DONE)
+adapt Flyout images (DONE)

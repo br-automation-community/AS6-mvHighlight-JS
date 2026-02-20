@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/Main</prop>
+  </header>
+  <body>
+    <tu tuid="KesselType">
+      <tuv xml:lang="de">
+        <seg>Kessel</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Boiler</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetTemp">
+      <tuv xml:lang="de">
+        <seg>Soll</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SubText1">
+      <tuv xml:lang="de">
+        <seg>Dauerlast</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Permanent load</seg>
+      </tuv>
+    </tu>
+    <tu tuid="VorlaufType">
+      <tuv xml:lang="de">
+        <seg>Vorlauf</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Forward</seg>
+      </tuv>
+    </tu>
+    <tu tuid="RücklaufType">
+      <tuv xml:lang="de">
+        <seg>Rücklauf</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Return</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SubText2">
+      <tuv xml:lang="de">
+        <seg> heizen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>heating</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SubText3">
+      <tuv xml:lang="de">
+        <seg>kühlen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>cooling</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TempMonitor">
+      <tuv xml:lang="de">
+        <seg>Temperatur Monitor</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature monitor</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Monday">
+      <tuv xml:lang="de">
+        <seg>Montag</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Monday</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tuesday">
+      <tuv xml:lang="de">
+        <seg>Dienstag</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tuesday</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Wednesday">
+      <tuv xml:lang="de">
+        <seg>Mittwoch</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Wednesday</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Thursday">
+      <tuv xml:lang="de">
+        <seg>Donnerstag</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Thursday</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Friday">
+      <tuv xml:lang="de">
+        <seg>Freitag</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Friday</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Saturday">
+      <tuv xml:lang="de">
+        <seg>Samstag</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Saturday</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Sunday">
+      <tuv xml:lang="de">
+        <seg>Sonntag</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sunday</seg>
+      </tuv>
+    </tu>
+    <tu tuid="from">
+      <tuv xml:lang="de">
+        <seg>Beginn :</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start :</seg>
+      </tuv>
+    </tu>
+    <tu tuid="to">
+      <tuv xml:lang="de">
+        <seg>Ende :</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>End :</seg>
+      </tuv>
+    </tu>
+    <tu tuid="off">
+      <tuv xml:lang="de">
+        <seg>Aus</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Off</seg>
+      </tuv>
+    </tu>
+    <tu tuid="on">
+      <tuv xml:lang="de">
+        <seg>Ein</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>On</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

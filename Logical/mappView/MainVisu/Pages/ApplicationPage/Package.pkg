@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="PagePackage" PackageType="PagePackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="Page description">ApplicationPage.page</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">cHeatingMain.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">Heating.tmx</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">cHeating_Right3.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">cHeating_Right2.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">cHeating_Right1.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">cHeating_Mid3.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">cHeating_Mid2.content</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="true">cHeating_Mid1.content</Object>
+  </Objects>
+</Package>

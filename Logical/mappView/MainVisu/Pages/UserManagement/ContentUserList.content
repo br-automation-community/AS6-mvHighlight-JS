@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentUserList" guid="e54f5e75-7f7f-44aa-8ea4-5a090e58d0dc" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.UserList" id="UserList1" top="100" left="200" width="1100" height="570" zIndex="0" headerHeight="60" paging="false">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem1" width="222" zIndex="0" text="$IAT/Viewer/UserName" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem2" zIndex="1" columnType="FullName" text="$IAT/Viewer/LongName" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem3" width="275" zIndex="2" columnType="Roles" text="$IAT/Viewer/Roles" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem4" width="115" zIndex="3" columnType="IsAdmin" text="$IAT/Viewer/IsUserAdmin" />
+        <Widget xsi:type="widgets.brease.UserListItem" id="UserListItem5" width="285" zIndex="4" columnType="LastLogin" text="$IAT/Viewer/LastLogin" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="UserLoggedOut" top="334" left="222" width="1053" height="58" zIndex="1" text="$IAT/Viewer/isAdmin" textAlign="center" style="Information" visible="false" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonCreateUser" top="97" left="1440" width="120" height="57" zIndex="2" multiLine="true" text="$IAT/Viewer/Create" wordWrap="true" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonModifyUser" top="177" left="1440" width="120" height="57" zIndex="3" multiLine="true" text="$IAT/Viewer/Modify" wordWrap="true" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonDeleteUser" top="257" left="1440" width="120" height="57" zIndex="4" multiLine="true" text="$IAT/Viewer/Delete" wordWrap="true" enable="false" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="264" left="-89" width="331" height="132" zIndex="5" multiLine="true" text="$IAT/Page.UserMgmt" wordWrap="true" rotation="270deg" fontSize="48px" padding="0px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="6" image="Media/mappServices/mapp_UserX.svg" rotation="270deg" />
+  </Widgets>
+</Content>

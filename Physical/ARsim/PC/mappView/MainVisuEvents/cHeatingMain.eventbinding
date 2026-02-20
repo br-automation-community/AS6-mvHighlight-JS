@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="cHeatingMain" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="cHeatingMain.ButtonControl.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="cHeatingMain" widgetRefId="ButtonControl" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.InfoBanner.Action" contentRefId="cHeatingMain" widgetRefId="InfoBanner1">
+            <Method xsi:type="widgets.brease.InfoBanner.Action.Open" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="cHeatingMain.ButtonClose.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="cHeatingMain" widgetRefId="ButtonClose" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.InfoBanner.Action" contentRefId="cHeatingMain" widgetRefId="InfoBanner1">
+            <Method xsi:type="widgets.brease.InfoBanner.Action.Close" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

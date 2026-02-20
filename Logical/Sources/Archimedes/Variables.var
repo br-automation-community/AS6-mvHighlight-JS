@@ -1,0 +1,11 @@
+VAR CONSTANT
+	NUMBER_OF_DOTS : UINT := 500;
+END_VAR
+VAR
+	YCoords : ARRAY[0..NUMBER_OF_DOTS] OF REAL;
+	XCoords : ARRAY[0..NUMBER_OF_DOTS] OF REAL;
+	radius : REAL;
+	t : REAL;
+	startAngleVer : REAL;
+	i : UINT;
+END_VAR

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentAlarmHistory" guid="b220d671-c5d7-47f3-95b8-325744c9698c" height="600" width="1300" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistory1" top="0" left="0" width="1100" height="570" zIndex="0" paging="false" shadow="4px 4px 14px rgba(62, 79, 92, 0.75)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem1" width="280" zIndex="0" columnType="timestamp" text="$IAT/Viewer/TimeStamp" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem2" width="580" zIndex="1" text="$IAT/Viewer/Message" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem3" width="120" zIndex="2" columnType="old state" text="$IAT/Viewer/Old" />
+        <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItem4" width="120" zIndex="3" columnType="new state" text="$IAT/Viewer/New" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonExport" top="5" left="1143" width="120" height="60" zIndex="1" image="Media/SVGsymbols/File/File.svg" multiLine="true" text="Export" wordWrap="true" imageHeight="30" imageWidth="30" style="defaultSmall" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonExport1" top="195" left="1143" width="120" height="60" zIndex="2" image="Media/SVGsymbols/Symbols/filter.png" multiLine="true" wordWrap="true" imageHeight="40" imageWidth="40" style="defaultSmall" />
+  </Widgets>
+</Content>

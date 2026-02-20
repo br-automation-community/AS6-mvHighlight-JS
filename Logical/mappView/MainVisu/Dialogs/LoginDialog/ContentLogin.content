@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentLogin" guid="29205d0e-a0e7-48e9-87a8-aa36c50f3706" height="300" width="500" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Login" id="Login1" top="59" left="100" zIndex="0" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonClose" top="250" left="200" zIndex="1" text="$Dialog.Close" />
+  </Widgets>
+</Content>

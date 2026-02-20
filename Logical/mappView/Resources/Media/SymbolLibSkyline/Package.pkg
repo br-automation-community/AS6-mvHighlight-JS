@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="mappViewSymbolLibPackage" PackageType="mappViewSymbolLibPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">Notification_Service.svg</Object>
+    <Object Type="File">Unit_Start.svg</Object>
+    <Object Type="File">Unit_End.svg</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="false">Unit_Return.svg</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="false">Unit_Forward.svg</Object>
+    <Object Type="File" TransferedForTargetSourceCompare="false">Unit_Boiler.svg</Object>
+    <Object Type="File">PointerImage.svg</Object>
+    <Object Type="File">Notification_Information.svg</Object>
+    <Object Type="File">Notification_Warning.svg</Object>
+    <Object Type="File">Notification_Maintainance.svg</Object>
+    <Object Type="File">Notification_Alarm.svg</Object>
+    <Object Type="File">Option_Cooling.svg</Object>
+    <Object Type="File">Option_Heating.svg</Object>
+    <Object Type="File">Group.svg</Object>
+    <Object Type="File">Alarm.svg</Object>
+  </Objects>
+</Package>

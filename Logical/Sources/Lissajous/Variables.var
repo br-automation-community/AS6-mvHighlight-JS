@@ -1,0 +1,22 @@
+VAR
+	verticalSpeed : REAL;
+END_VAR
+VAR CONSTANT
+	NUMBER_OF_DOTS : UINT := 500;
+END_VAR
+VAR
+	steps : REAL;
+	horizontalSpeed : REAL;
+	YCoords : ARRAY[0..NUMBER_OF_DOTS] OF REAL;
+	XCoords : ARRAY[0..NUMBER_OF_DOTS] OF REAL;
+	angleHor : REAL;
+	angleVer : REAL;
+	amplitude : REAL;
+	currentY : REAL;
+	size : REAL;
+	startAngleVer : REAL;
+	startAngleHor : REAL;
+	i : UINT;
+	currentX : REAL;
+	phasenDifferenzVer : REAL;
+END_VAR

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package SubType="AreaContentsPackage" PackageType="AreaContentsPackage" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File">ContentHeader.content</Object>
+    <Object Type="File">ContentHeaderNavigation.content</Object>
+    <Object Type="File">ContentBottomHome.content</Object>
+    <Object Type="File">Content.content</Object>
+  </Objects>
+</Package>

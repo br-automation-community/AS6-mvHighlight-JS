@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentXY" guid="0a5daf0a-9ce2-4b27-a026-bf82058d209a" height="600" width="1200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.InfoBanner" id="InfoBanner1" top="0" left="400" width="400" height="80" zIndex="1" autoClose="true" autoCloseTime="3000" docking="top" transitionCloseTime="500" transitionOpenTime="500" borderStyle="none" backColor="rgba(153, 180, 209, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="23" left="43" width="320" zIndex="0" text="Chart type changed..." textColor="rgba(255, 255, 255, 1)" textAlign="center" fontSize="18px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.XYChart" id="XYChart1" top="26" left="27" width="862" height="541" zIndex="0" updateChartTime="100" backColor="rgba(219, 219, 219, 0)" chartColor="rgba(0, 128, 0, 1)" cursorTableBackColor="rgba(0, 128, 0, 1)" cursorTableBorderColor="rgba(224, 224, 224, 1)" cursorTableFontSize="16px">
+      <Properties>
+        <yAxis>
+          <Element id="yAxis1" max="80" min="20" textColor="rgba(0, 0, 0, 1)" color="rgba(224, 224, 224, 1)" titleTextColor="rgba(0, 0, 0, 1)" rangeMode="fromSource" />
+        </yAxis>
+        <xAxis>
+          <Element id="xAxis1" max="80" color="rgba(224, 224, 224, 1)" textColor="rgba(0, 0, 0, 1)" titleTextColor="rgba(224, 224, 224, 1)" min="20" showUnit="false" rangeMode="fromSource" />
+        </xAxis>
+        <graph>
+          <Element id="graph1" xAxisReference="xAxis1" yAxisReference="yAxis1" lineColor="rgba(0, 255, 0, 1)" />
+        </graph>
+        <cursor>
+          <Element id="cursor1" cursorColor="rgba(0, 0, 128, 1)" />
+          <Element id="cursor2" cursorColor="rgba(192, 0, 192, 1)" />
+        </cursor>
+      </Properties>
+    </Widget>
+    <Widget xsi:type="widgets.brease.BasicSlider" id="RadialSlider1" top="274" left="910" zIndex="2" maxValue="20" showValueDisplay="true" value="10" />
+    <Widget xsi:type="widgets.brease.BasicSlider" id="RadialSlider2" top="384" left="910" zIndex="3" maxValue="20" showValueDisplay="true" value="10" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonLisajous" top="516" left="887" zIndex="4" draggable="true" text="Lisajous" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonSpin" top="516" left="1080" zIndex="5" draggable="true" text="Spin" fontSize="16px" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonFreeze" top="176" left="973" width="60" height="60" zIndex="6" image="Media/SVGSymbols/Media/Stop.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" mouseDownBackColor="rgba(153, 180, 209, 1)" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonUnFreeze" top="176" left="1120" width="60" height="60" zIndex="7" image="Media/SVGSymbols/Media/Play.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" mouseDownBackColor="rgba(153, 180, 209, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonScrollLeft" top="94" left="973" width="60" height="60" zIndex="8" image="Media/SVGSymbols/Arrow/ArrowLeft.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonScrollRight" top="94" left="1120" width="60" height="60" zIndex="9" image="Media/SVGSymbols/Arrow/ArrowRight.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonZoomIn" top="13" left="973" width="60" height="60" zIndex="10" image="Media/SVGSymbols/Edit/ZoomIn.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonZoomOut" top="13" left="1120" width="60" height="60" zIndex="11" image="Media/SVGSymbols/Edit/ZoomOut.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonScrollUp" top="13" left="1048" width="60" height="60" zIndex="12" image="Media/SVGSymbols/Arrow/ArrowUp.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonScrollDown" top="176" left="1048" width="60" height="60" zIndex="13" image="Media/SVGSymbols/Arrow/ArrowDown.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonZoomReset" top="94" left="1048" width="60" height="60" zIndex="14" image="Media/SVGSymbols/Edit/Maximize.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonRedo" top="13" left="887" width="60" height="60" zIndex="16" image="Media/SVGSymbols/Edit/Redo.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GB_Values" top="119" left="650" width="184" zIndex="15" childPositioning="relative" style="transparent" visible="false">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="0" left="0" zIndex="0" text="X1:" textColor="rgba(255, 255, 255, 1)" fontSize="14px" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="0" left="0" zIndex="1" textColor="rgba(255, 255, 255, 1)" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="0" left="0" zIndex="2" text="Y1:" textColor="rgba(255, 255, 255, 1)" fontSize="14px" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput2" top="0" left="0" zIndex="3" textColor="rgba(255, 255, 255, 1)" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="0" left="0" zIndex="4" text="X2:" textColor="rgba(255, 255, 255, 1)" fontSize="14px" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput3" top="0" left="0" zIndex="5" textColor="rgba(255, 255, 255, 1)" />
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="0" left="0" zIndex="6" text="Y2:" textColor="rgba(255, 255, 255, 1)" fontSize="14px" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="0" left="0" zIndex="7" textColor="rgba(255, 255, 255, 1)" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ContentXY" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="ContentXY.ButtonRedo.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonRedo" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+            <Method xsi:type="widgets.brease.XYChart.Action.Update" graphId="graph1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonZoomIn.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonZoomIn" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+            <Method xsi:type="widgets.brease.XYChart.Action.ZoomIn" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonScrollUp.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonScrollUp" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+            <Method xsi:type="widgets.brease.XYChart.Action.ScrollUp" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonZoomOut.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonZoomOut" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+            <Method xsi:type="widgets.brease.XYChart.Action.ZoomOut" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonScrollLeft.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonScrollLeft" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+            <Method xsi:type="widgets.brease.XYChart.Action.ScrollLeft" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonZoomReset.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonZoomReset" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+            <Method xsi:type="widgets.brease.XYChart.Action.ZoomReset" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonScrollRight.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonScrollRight" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+            <Method xsi:type="widgets.brease.XYChart.Action.ScrollRight" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonFreeze.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonFreeze" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+                <Method xsi:type="widgets.brease.XYChart.Action.Freeze" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollDown">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollLeft">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollRight">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollUp">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollDown">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="6">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonRedo">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="7">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonUnFreeze">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="8">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonFreeze">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="9">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonZoomIn">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="10">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonZoomOut">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="11">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonZoomReset">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="12">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="ContentXY" widgetRefId="GB_Values">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonUnFreeze.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonUnFreeze" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+                <Method xsi:type="widgets.brease.XYChart.Action.Unfreeze" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollDown">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollLeft">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollRight">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollUp">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonScrollDown">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="6">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonRedo">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="7">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonFreeze">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="8">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonUnFreeze">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="9">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonZoomIn">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="10">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonZoomOut">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="11">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentXY" widgetRefId="ButtonZoomReset">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="12">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="ContentXY" widgetRefId="GB_Values">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.ButtonScrollDown.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentXY" widgetRefId="ButtonScrollDown" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.XYChart.Action" contentRefId="ContentXY" widgetRefId="XYChart1">
+            <Method xsi:type="widgets.brease.XYChart.Action.ScrollDown" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ContentXY.XYChart1.OnDrop">
+      <Source xsi:type="widgets.brease.XYChart.Event" contentRefId="ContentXY" widgetRefId="XYChart1" event="OnDrop" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.InfoBanner.Action" contentRefId="ContentXY" widgetRefId="InfoBanner1">
+            <Method xsi:type="widgets.brease.InfoBanner.Action.Open" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="widgetId=&quot;ButtonLisajous&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="XYChartType">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="0" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="widgetId=&quot;ButtonSpin&quot;">
+        <Action>
+          <Target xsi:type="session.VariableAction" refId="XYChartType">
+            <Method xsi:type="session.VariableAction.SetValueNumber" value="1" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cEventScript" guid="8333f832-20ba-409d-b95e-5e73019eebe7" height="840" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="Label_ButtonHeader" top="280" left="-138" width="360" height="63" zIndex="0" multiLine="true" text="EventScript" wordWrap="true" rotation="270deg" fontSize="48px" style="Title1" />
+    <Widget xsi:type="widgets.brease.Image" id="Image_HeaderButton" top="500" left="10" width="66" height="66" zIndex="1" image="Media/JS.png" rotation="270deg" />
+    <Widget xsi:type="widgets.brease.Button" id="NavigationHome" top="750" left="780" width="80" height="80" zIndex="78" image="Media/SVGsymbols/Symbols/Home.svg" imageHeight="64" imageWidth="64" imageColor="rgba(71, 71, 71, 1)" mouseDownImageColor="rgba(255, 133, 0, 1)" style="transparent" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="240" left="180" width="830" height="160" zIndex="79" text="EventScript example 1" textAlign="left">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TextOutput" id="txtScrollText" top="13" left="129" width="470" zIndex="0" value="press start to execute eventscript" borderWidth="1px" cornerRadius="5px" backGroundGradient="linear-gradient(to bottom, #dbdbdb 0%,#ffffff 100%)" borderStyle="solid" />
+        <Widget xsi:type="widgets.brease.Button" id="btnStart" top="23" left="649" width="60" height="60" zIndex="1" image="Media/SVGsymbols/Media/Play.svg" style="defaultSmall" />
+        <Widget xsi:type="widgets.brease.Button" id="btnStop" top="23" left="729" width="60" height="60" zIndex="2" image="Media/SVGsymbols/Media/Stop.svg" style="defaultSmall" />
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="63" left="9" width="130" zIndex="3" text="Enter your text:" />
+        <Widget xsi:type="widgets.brease.TextInput" id="TextInput1" top="63" left="129" width="470" zIndex="4" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label2" top="30" left="170" width="770" zIndex="80" text="• Fast execution time: Script is executed directly in the browser" />
+    <Widget xsi:type="widgets.brease.Label" id="Label3" top="70" left="170" width="860" zIndex="81" text="• Fast development: Scripts can be written quickly and are easy to read (comments can be used in every line)" />
+    <Widget xsi:type="widgets.brease.Label" id="Label4" top="110" left="170" width="730" zIndex="82" text="• Countless possibilities with JavaScript:E.g. functions, constants, etc." />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="440" left="180" width="830" height="200" zIndex="83" text="EventScript example 2" textAlign="left">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.DropDownBox" id="DropDownBox1" top="23" left="289" width="169" zIndex="0" dataProvider="[{'value':'0','text':'    '}]" selectedValue="0" borderWidth="0px" showOpenIndicator="true" />
+        <Widget xsi:type="widgets.brease.Button" id="btnFillDropDown" top="23" left="89" width="151" zIndex="1" text="Fill DropDown" style="defaultSmall" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="23" left="19" zIndex="2" text="1:" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput1" top="93" left="89" width="171" zIndex="3" borderWidth="1px" backGroundGradient="linear-gradient(to bottom, #dbdbdb 0%,#ffffff 100%)" borderStyle="solid" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput2" top="93" left="289" width="171" zIndex="4" borderWidth="1px" backGroundGradient="linear-gradient(to bottom, #dbdbdb 0%,#ffffff 100%)" borderStyle="solid" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="TextOutput3" top="93" left="489" width="171" zIndex="5" borderWidth="1px" backGroundGradient="linear-gradient(to bottom, #dbdbdb 0%,#ffffff 100%)" borderStyle="solid" />
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="93" left="19" zIndex="6" text="2:" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Image" id="Image1" top="120" left="1070" width="440" height="520" zIndex="84" image="Media/BackGround/jsBackground.png" />
+    <Widget xsi:type="widgets.brease.Label" id="Label7" top="150" left="170" width="730" zIndex="85" text="• Can be used in parallel with graphical event binding" />
+  </Widgets>
+</Content>

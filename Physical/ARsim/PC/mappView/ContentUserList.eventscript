@@ -1,0 +1,19 @@
+/**
+* @eventScriptSetId ContentUserList
+* @contentId ContentUserList
+*/
+
+clientSystem.contentLoaded(function(e){
+    if (e.detail.contentId === 'ContentUserList') {
+        widgets.ButtonDeleteUser.setEnable(false);
+    }
+});
+
+widgets.UserList1.itemClick(function(e){
+    if( e.detail.UserName === '') {
+        widgets.ButtonDeleteUser.setEnable(false);
+    }
+    else {
+        widgets.ButtonDeleteUser.setEnable(true);
+    }
+});

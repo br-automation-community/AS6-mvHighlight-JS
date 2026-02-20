@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gSkyline" Type="mpskyline">
+    <Group ID="mapp.Gen">
+      <Property ID="Enable" Value="TRUE" />
+    </Group>
+    <Group ID="MpSkyline">
+      <Group ID="ModuleStateCollections">
+        <Group ID="[0]">
+          <Property ID="Name" Value="CoffeeMachineStates" />
+          <Group ID="States">
+            <Group ID="[0]">
+              <Property ID="Name" Value="Off" />
+            </Group>
+            <Group ID="[1]">
+              <Property ID="Name" Value="Ready" />
+            </Group>
+            <Group ID="[2]">
+              <Property ID="Name" Value="Warning" />
+            </Group>
+            <Group ID="[3]">
+              <Property ID="Name" Value="Error" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="OptionStateCollections">
+        <Group ID="[0]">
+          <Property ID="Name" Value="CoolingStates" />
+          <Group ID="States">
+            <Group ID="[0]">
+              <Property ID="Name" Value="Off" />
+            </Group>
+            <Group ID="[1]">
+              <Property ID="Name" Value="Cooling" />
+            </Group>
+          </Group>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="HeatingStates" />
+          <Group ID="States">
+            <Group ID="[0]">
+              <Property ID="Name" Value="Off" />
+            </Group>
+            <Group ID="[1]">
+              <Property ID="Name" Value="Heating" />
+            </Group>
+          </Group>
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Name" Value="FilterStates" />
+          <Group ID="States">
+            <Group ID="[0]">
+              <Property ID="Name" Value="NormalFilter" />
+            </Group>
+            <Group ID="[1]">
+              <Property ID="Name" Value="PremiumFilter" />
+            </Group>
+          </Group>
+        </Group>
+        <Group ID="[3]">
+          <Property ID="Name" Value="GrinderStates" />
+          <Group ID="States">
+            <Group ID="[0]">
+              <Property ID="Name" Value="GrindRough" />
+            </Group>
+            <Group ID="[1]">
+              <Property ID="Name" Value="GrindFine" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="NotificationCollections">
+        <Group ID="[0]">
+          <Property ID="Name" Value="CoffeeNotifications" />
+          <Group ID="Notifications">
+            <Group ID="[0]">
+              <Property ID="Name" Value="Information" />
+              <Property ID="MultipleInstances" Value="0" />
+            </Group>
+            <Group ID="[1]">
+              <Property ID="Name" Value="Alarm" />
+              <Property ID="MultipleInstances" Value="0" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="Options">
+        <Group ID="[0]">
+          <Property ID="Name" Value="OptionCooling" />
+          <Property ID="OptionStateCollection" Value="CoolingStates" />
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="OptionHeating" />
+          <Property ID="OptionStateCollection" Value="HeatingStates" />
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Name" Value="OptionFilter" />
+          <Property ID="OptionStateCollection" Value="FilterStates" />
+        </Group>
+        <Group ID="[3]">
+          <Property ID="Name" Value="OptionGrinder" />
+          <Property ID="OptionStateCollection" Value="GrinderStates" />
+        </Group>
+      </Group>
+      <Group ID="ModuleTypes">
+        <Group ID="[0]">
+          <Property ID="Name" Value="Unit_Boiler" />
+          <Property ID="Size" Value="L" />
+          <Property ID="StateCollection" Value="CoffeeMachineStates" />
+          <Property ID="NotificationCollection" Value="CoffeeNotifications" />
+          <Group ID="[0]">
+            <Property ID="Name" Value="OptionCooling" />
+          </Group>
+          <Group ID="[1]">
+            <Property ID="Name" Value="OptionHeating" />
+          </Group>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="Unit_Forward" />
+          <Property ID="Size" Value="L" />
+          <Property ID="StateCollection" Value="CoffeeMachineStates" />
+          <Property ID="NotificationCollection" Value="CoffeeNotifications" />
+          <Group ID="[0]">
+            <Property ID="Name" Value="OptionFilter" />
+          </Group>
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Name" Value="Unit_Return" />
+          <Property ID="Size" Value="M" />
+          <Property ID="StateCollection" Value="CoffeeMachineStates" />
+          <Property ID="NotificationCollection" Value="CoffeeNotifications" />
+          <Group ID="[0]">
+            <Property ID="Name" Value="OptionGrinder" />
+          </Group>
+        </Group>
+        <Group ID="[3]">
+          <Property ID="Name" Value="Unit_Start" />
+          <Property ID="Size" Value="M" />
+          <Property ID="StateCollection" Value="CoffeeMachineStates" />
+          <Property ID="NotificationCollection" Value="CoffeeNotifications" />
+        </Group>
+        <Group ID="[4]">
+          <Property ID="Name" Value="Unit_End" />
+          <Property ID="Size" Value="L" />
+          <Property ID="StateCollection" Value="CoffeeMachineStates" />
+          <Property ID="NotificationCollection" Value="CoffeeNotifications" />
+        </Group>
+      </Group>
+      <Group ID="Modules">
+        <Group ID="[0]">
+          <Property ID="Name" Value="Start" />
+          <Property ID="Type" Value="Unit_Start" />
+          <Property ID="Text" />
+          <Property ID="Grouping" Value="0" />
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="Boiler_Tank" />
+          <Property ID="Type" Value="Unit_Boiler" />
+          <Property ID="Text" Value="" />
+          <Property ID="Grouping" Value="1" />
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Name" Value="Boiler_Tank2" />
+          <Property ID="Type" Value="Unit_Boiler" />
+          <Property ID="Text" Value="" />
+          <Property ID="Grouping" Value="1" />
+        </Group>
+        <Group ID="[3]">
+          <Property ID="Name" Value="Forward_Tank" />
+          <Property ID="Type" Value="Unit_Forward" />
+          <Property ID="Text" Value="" />
+          <Property ID="Grouping" Value="1" />
+        </Group>
+        <Group ID="[4]">
+          <Property ID="Name" Value="Forward_Tank2" />
+          <Property ID="Type" Value="Unit_Forward" />
+          <Property ID="Text" Value="" />
+          <Property ID="Grouping" Value="0" />
+        </Group>
+        <Group ID="[5]">
+          <Property ID="Name" Value="Return_Tank" />
+          <Property ID="Type" Value="Unit_Return" />
+          <Property ID="Text" Value="" />
+          <Property ID="Grouping" Value="1" />
+        </Group>
+        <Group ID="[6]">
+          <Property ID="Name" Value="Return_Tank2" />
+          <Property ID="Type" Value="Unit_Return" />
+          <Property ID="Text" Value="" />
+          <Property ID="Grouping" Value="0" />
+        </Group>
+        <Group ID="[7]">
+          <Property ID="Name" Value="End" />
+          <Property ID="Type" Value="Unit_End" />
+          <Property ID="Text" />
+          <Property ID="Grouping" Value="0" />
+        </Group>
+      </Group>
+    </Group>
+    <Selector ID="Alarms" Value="MpAlarmX">
+      <Group ID="mapp.AlarmX.Core.Configuration">
+        <Group ID="[0]">
+          <Property ID="Name" Value="InvalidConfig" />
+          <Property ID="Message" Value="{$BR/mapp/MpSkyline/Alarms/InvalidConfig}" />
+          <Property ID="Code" Value="0" />
+          <Property ID="Severity" Value="1" />
+          <Selector ID="Behavior" Value="EdgeAlarm">
+            <Property ID="AutoReset" Value="TRUE" />
+            <Property ID="Acknowledge" Value="1" />
+            <Property ID="Confirm" Value="0" />
+            <Property ID="MultipleInstances" Value="TRUE" />
+            <Property ID="ReactionWhilePending" Value="TRUE" />
+            <Property ID="Async" Value="FALSE" />
+            <Group ID="Recording">
+              <Property ID="InactiveToActive" Value="TRUE" />
+              <Property ID="ActiveToInactive" Value="FALSE" />
+              <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+              <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            </Group>
+          </Selector>
+          <Property ID="Disable" Value="FALSE" />
+          <Property ID="AdditionalInformation1" />
+          <Property ID="AdditionalInformation2" />
+        </Group>
+      </Group>
+    </Selector>
+  </Element>
+</Configuration>

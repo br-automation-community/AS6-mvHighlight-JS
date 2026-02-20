@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/Viewer</prop>
+  </header>
+  <body>
+    <tu tuid="isAdmin">
+      <tuv xml:lang="de">
+        <seg>Es dürfen nur MpUserX Administratoren das  UserList Widget bedienen.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Only MpUserX administrators are allowed to operate with the UserList widget.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="UserName">
+      <tuv xml:lang="de">
+        <seg>Benutzer Name</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LongName">
+      <note>Lo</note>
+      <tuv xml:lang="de">
+        <seg>Vollständiger Name</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Full name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Roles">
+      <tuv xml:lang="de">
+        <seg>Zugewiesene Rollen</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Assigned roles</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IsUserAdmin">
+      <tuv xml:lang="de">
+        <seg>Benutzer
+Adminstrator</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>User
+admin</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Create">
+      <tuv xml:lang="de">
+        <seg>Erstelle Benutzer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Create user</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Delete">
+      <tuv xml:lang="de">
+        <seg>Lösche Benutzer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Delete user</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Modify">
+      <tuv xml:lang="de">
+        <seg>Ändere Benutzer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Modify user</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TimeStamp">
+      <tuv xml:lang="de">
+        <seg>Zeit</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Message">
+      <tuv xml:lang="de">
+        <seg>Meldungstext</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Message text</seg>
+      </tuv>
+    </tu>
+    <tu tuid="State">
+      <tuv xml:lang="de">
+        <seg>Status</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>State</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Severity">
+      <tuv xml:lang="de">
+        <seg>Priorität</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Severity</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Old">
+      <tuv xml:lang="de">
+        <seg>Alt Status</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Old state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="New">
+      <tuv xml:lang="de">
+        <seg>Neu Status</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>New state</seg>
+      </tuv>
+    </tu>
+    <tu tuid="OldValue">
+      <tuv xml:lang="de">
+        <seg>Alter Wert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Old value</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NewValue">
+      <tuv xml:lang="de">
+        <seg>Neuer Wert</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>New value</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LastLogin">
+      <tuv xml:lang="de">
+        <seg>Letzter Login</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Last login</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

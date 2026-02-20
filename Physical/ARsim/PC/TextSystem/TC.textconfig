@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="TextConfig" Type="TextConfig">
+    <Group ID="Languages">
+      <Property ID="UserDefaultLanguage" Value="en" />
+      <Property ID="UserFallbackLanguage" Value="en" />
+      <Group ID="TargetLanguages">
+        <Property ID="TargetLanguage[1]" Value="en" />
+        <Property ID="TargetLanguage[2]" Value="de" />
+      </Group>
+    </Group>
+    <Group ID="TargetFiles">
+      <Property ID="TargetFile[1]" Value="mappView.Resources.Texts.PageTexts.tmx" />
+      <Property ID="TargetFile[2]" Value="mappView.MainVisu.Resources.Texts.ClientInfoTexts.tmx" />
+      <Property ID="TargetFile[3]" Value="mappView.MainVisu.Resources.Texts.Expressions.tmx" />
+      <Property ID="TargetFile[4]" Value="mappView.MainVisu.Pages.FavoriteWatchPage.FavoritePage.tmx" />
+      <Property ID="TargetFile[5]" Value="mappView.MainVisu.Pages.UseCasePage.UseCases.tmx" />
+      <Property ID="TargetFile[6]" Value="mappView.MainVisu.Pages.UseCasePage.UnitTexts.tmx" />
+      <Property ID="TargetFile[7]" Value="mappView.MainVisu.Pages.AnimationPage.Animation.tmx" />
+      <Property ID="TargetFile[8]" Value="mappView.MainVisu.Dialogs.FormularDialog.LocalizableTexts.tmx" />
+      <Property ID="TargetFile[9]" Value="mappView.MainVisu.Pages.ApplicationPage.Heating.tmx" />
+      <Property ID="TargetFile[10]" Value="mappView.Resources.Texts.AlarmTexts.tmx" />
+      <Property ID="TargetFile[11]" Value="mappView.Resources.Texts.AuditTexts.tmx" />
+      <Property ID="TargetFile[12]" Value="mappView.Resources.Texts.ViewerPageTexts.tmx" />
+      <Property ID="TargetFile[13]" Value="Libraries.MpAudit.TxtEvent.tmx" />
+      <Property ID="TargetFile[14]" Value="Sources.ReportMgmt.Report.tmx" />
+      <Property ID="TargetFile[15]" Value="mappView.Resources.Texts.UserList.tmx" />
+    </Group>
+  </Element>
+</Configuration>

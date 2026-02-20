@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompoundWidget id="Kachel" width="320" height="162" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Widgets>
+		<Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="10" left="8" width="295" height="135" zIndex="0" cornerRadius="10px" backColor="rgba(255, 255, 255, 1)" shadow="4px 4px 14px rgba(62, 79, 92, 0.75)" style="Transparent">
+			<Widgets>
+				<Widget xsi:type="widgets.brease.Image" id="KessselImage" top="12" left="12" width="25" height="25" zIndex="0" imageColor="rgba(192, 0, 0, 1)"/>
+				<Widget xsi:type="widgets.brease.Label" id="TextOutputStatus" top="-3" left="0" width="80%" height="60" zIndex="1" text="Dauerlast" textColor="rgba(154, 154, 154, 1)" textAlign="left top" padding="34px 0px 0px 52px" />
+				<Widget xsi:type="widgets.brease.Label" id="TextOutputName" top="-3" left="-4" width="80%" height="60" zIndex="2" text="Kessel" textColor="rgba(34, 34, 34, 1)" textAlign="left top" fontSize="16px" padding="15px 0px 0px 52px" />
+				<Widget xsi:type="widgets.brease.Button" id="BtnMode" top="11" left="255" width="32" height="32" zIndex="3" imageAlign="right" imageHeight="24" imageWidth="24" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" cornerRadius="999px" backColor="rgba(192, 0, 0, 1)" mouseDownBackColor="rgba(192, 0, 0, 1)" style="Transparent" />
+				<Widget xsi:type="widgets.brease.FlexLayoutPanel" id="FlexLayoutPanel1" top="60" left="0" width="284" height="72" zIndex="4" alignment="horizontal" childMainAlign="end" childCrossAlign="end" margin="0px 0px 0px 3px" padding="0px">
+					<Widgets>
+						<Widget xsi:type="widgets.brease.FlexLayoutPanel" id="FlexLayoutPanel2" top="0" left="0" width="66%" height="100%" zIndex="0" alignment="vertical" childMainAlign="end" childCrossAlign="end" margin="0px" padding="0px">
+							<Widgets>
+								<Widget xsi:type="widgets.brease.NumericOutput" id="CurTemp" top="0" left="0" width="132" height="50" zIndex="6" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" backColor="rgba(255, 255, 255, 0)"  borderStyle="none" fontName="Arial" fontSize="26px" unitFontSize="20px" />
+							</Widgets>
+						</Widget>
+						<Widget xsi:type="widgets.brease.FlexLayoutPanel" id="FlexLayoutPanel3" top="0" left="0" width="34%" height="100%" zIndex="1" alignment="vertical" childMainAlign="end" childCrossAlign="end" margin="0px" padding="0px">
+							<Widgets>
+								<Widget xsi:type="widgets.brease.Label" id="txtSetTemp" top="0" left="0" width="100%" zIndex="0" text="$IAT/Main/SetTemp" textColor="rgba(154, 154, 154, 1)" textAlign="right bottom" />
+								<Widget xsi:type="widgets.brease.NumericInput" id="SetTemp" top="0" left="0" width="100%" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" backColor="rgba(255, 255, 255, 0)" activeBackColor="rgba(255, 255, 255, 0)" borderStyle="none" fontSize="16px" shadow="none"/>
+							</Widgets>
+						</Widget>
+					</Widgets>
+				</Widget>
+			</Widgets>
+		</Widget>
+	</Widgets>
+	<Properties>
+		<Property xsi:type="StructureBindableProperty" name="value" type="KachelType" readOnly="false">
+			<Description>Kachel_type of KachelComp</Description>
+			<Mappings>
+				<Mapping widget="SetTemp" type="Number" property="node" mode="twoWay" memberPath="SetTemp" mapToNode="true" />
+				<Mapping widget="CurTemp" type="Number" property="node" mode="oneWay" memberPath="CurrentTemp" mapToNode="true" />
+				<Mapping widget="KessselImage" type="ImagePath" property="image" mode="twoWay" memberPath="Image" mapToNode="false" />
+
+			</Mappings>
+		</Property>
+		
+		<Property xsi:type="NonBindableProperty" name="KesselType" type="String" category="Appearace" defaultValue="$IAT/Main/KesselType" localizable="true">
+			<Description>Allow text assignment</Description>
+			<Mappings>
+				<Mapping widget="TextOutputName" property="text" />
+			</Mappings>
+		</Property>
+	
+		<Property xsi:type="NonBindableProperty" name="SubType" type="String" category="Appearace" defaultValue="$IAT/Main/SubText1" localizable="true">
+			<Description>Allow text assignment</Description>
+			<Mappings>
+				<Mapping widget="TextOutputStatus" property="text" />
+			</Mappings>
+		</Property>
+		
+		<!-- 
+		Simple non bindable property:
+		Property Attributes
+		xsi:type: NonBindableProperty
+		name: name of the property (not allowed: width, height, top, left, id, enable, visible, zindex, margin, premissionview, permissionoperate, description)
+		<Property xsi:type="NonBindableProperty" name="" type="" defaultValue="" required="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property=""/>
+		<Mapping widget="" property=""/>
+		</Mappings>
+		</Property>
+    
+		Simple bindable property:
+		<Property xsi:type="BindableProperty" name="" type="" defaultValue="" readOnly="" category="" localizable="" typeRefId="" nodeRefId="">
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" property="" mode=""/>
+		<Mapping widget="" property="" mode=""/>
+		</Mappings>
+		</Property>
+
+
+		Structure bindable property:
+		<Property xsi:type="StructureBindableProperty" name="" type="" readOnly="" >
+		<Description>Description will be shown in property grid.</Description>
+		<Mappings>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		<Mapping widget="" type="" property="" mode="" memberPath="" mapToNode=""/>
+		</Mappings>
+		</Property>
+		-->
+	</Properties>
+
+	<Events>
+    <!--
+    <Event name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" event="" />
+      </Mappings>
+    </Event>
+    -->
+  </Events>
+
+  <Actions>
+    <!--
+    <Action name="">
+      <Description>Description will be shown in property grid.</Description>
+      <Mappings>
+        <Mapping widget="" action="" />
+      </Mappings>
+    </Action>
+    -->
+  </Actions>
+
+  <EventBindings>
+    <!-- source and target can only be widgets within the compound widget.
+    <EventBinding id="">
+      <Source xsi:type="widget.Event" widgetRefId="" event="" />
+      <EventHandler condition="">
+        <Action>
+          <Target xsi:type="widget.Action" widgetRefId="">
+            <Method name="" value="" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    -->
+  </EventBindings>
+
+</CompoundWidget>

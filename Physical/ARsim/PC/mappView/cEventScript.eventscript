@@ -1,0 +1,64 @@
+/**
+* @eventScriptSetId cEventScript
+* @contentId cEventScript
+*/
+
+var myText;
+const varWidgets = [widgets.TextOutput1,widgets.TextOutput2,widgets.TextOutput3]; 
+
+
+// *****************************************************************
+// EventScript example 1 - scroll text
+// *****************************************************************
+
+// get text from session variable if content is loaded
+clientSystem.contentLoaded(function(e){
+    if (e.detail.contentId = 'cEventScript') {
+        Promise.all ([variables.ScrollText.getValue()]).then (result => {
+        myText = result[0] + '    ';
+        });
+    }
+});
+
+// update text when changed by user input
+variables.ScrollText.valueChanged(function(e){
+    myText = e.detail.newValue + '    ';
+});
+
+// start / stop timer
+widgets.btnStart.click(function(e){
+    timers.ScrollText.start();  
+});
+widgets.btnStop.click(function(e){
+    timers.ScrollText.stop();  
+});
+
+// scroll text and show result in TextOutput widget
+timers.ScrollText.elapsed(function(e){
+myText = myText.slice(1,myText.length)+myText.slice(0,1);
+    widgets.txtScrollText.setValue(myText);
+});
+
+// *****************************************************************
+// EventScript example 2 - Read OPC UA list => create dataprovider
+//                         for DropDownBox
+//                         index change => set text to multiple
+//                         textOutput widgets
+// *****************************************************************
+
+widgets.btnFillDropDown.click(async function(e){
+    const listElements = []; 
+    let result = await opcua('::VarList:listBoxValues').getValue(); 
+    for (let i = 0; i < result.length; i++) { 
+        listElements[i] = {value:`${result[i]}`,text:`${result[i]}`};  
+    } 
+    widgets.DropDownBox1.setDataProvider(listElements); 
+ 
+});
+
+widgets.DropDownBox1.selectedIndexChanged(function(e){
+    const varText = widgets.DropDownBox1.getSelectedValue();
+    varWidgets.forEach((widget,index) => { 
+        widget.setValue(varText);
+    });
+});

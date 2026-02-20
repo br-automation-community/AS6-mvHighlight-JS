@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="6.0.1.7"?>
+<OpcUaSource FileVersion="10">
+  <Aliases>
+    <ACLAliases>
+      <ACL Id="1">
+        <ACE RoleName="Service" Access="0x005F" />
+        <ACE RoleName="Operator" Access="0x005F" />
+      </ACL>
+    </ACLAliases>
+    <EURangeViolationAliases />
+    <EURangesAliases>
+      <EURanges Id="1">
+        <EURange>
+          <Low ValueProvider="Const">0.001</Low>
+          <High ValueProvider="Const">1</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="2">
+        <EURange>
+          <Low ValueProvider="Const">1</Low>
+          <High ValueProvider="Const">1000</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="13">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">250</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="14">
+        <EURange>
+          <Low ValueProvider="Const">-500</Low>
+          <High ValueProvider="Const">500</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="15">
+        <EURange>
+          <Low ValueProvider="Const">-600</Low>
+          <High ValueProvider="Const">600</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="16">
+        <EURange>
+          <Low ValueProvider="Const">15</Low>
+          <High ValueProvider="Const">80</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="17">
+        <EURange>
+          <Low ValueProvider="Const">20</Low>
+          <High ValueProvider="Const">80</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="18">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">200</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="19">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">500</High>
+        </EURange>
+        <EURange Priority="1" RoleName="Service">
+          <Low ValueProvider="Const">20</Low>
+          <High ValueProvider="Const">300</High>
+        </EURange>
+        <EURange Priority="3" RoleName="Operator">
+          <Low ValueProvider="Const">35</Low>
+          <High ValueProvider="Const">250</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="20">
+        <EURange>
+          <Low ValueProvider="PV">::Simulation:minLimit</Low>
+          <High ValueProvider="PV">::Simulation:maxLimit</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="22">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">2000</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="24">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+      </EURanges>
+      <EURanges Id="25">
+        <EURange>
+          <Low ValueProvider="Const">0</Low>
+          <High ValueProvider="Const">500</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="3" UnitId="4408652" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="degree Celsius" Symbol="°C" />
+      <EngineeringUnit Id="4" UnitId="5066068" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="millimetre" Symbol="mm" />
+      <EngineeringUnit Id="6" UnitId="4403510" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="millimetre per second" Symbol="mm/s" />
+    </EngineeringUnitAliases>
+  </Aliases>
+  <Module Name="&lt;Default&gt;">
+    <Task Name="Logarithmi">
+      <Variable Name="axis_scale_x" />
+      <Variable Name="axis_scale_y" />
+      <Variable Name="label" />
+      <Variable Name="output_string_chart" />
+      <Variable Name="raw_values_x_axis_1" EURangesId="1" />
+      <Variable Name="raw_values_y_axis_1" EURangesId="2" />
+      <Variable Name="show_graph_2" />
+      <Variable Name="stroke_color_1" />
+      <Variable Name="stroke_width_1" />
+      <Variable Name="unit_x_axis" />
+      <Variable Name="unit_y_axis" />
+    </Task>
+    <Task Name="Lissajous">
+      <Variable Name="horizontalSpeed" />
+      <Variable Name="startAngleVer" />
+      <Variable Name="verticalSpeed" />
+      <Variable Name="XCoords" RecursiveEnable="2" EURangesId="16" />
+      <Variable Name="YCoords" RecursiveEnable="2" EURangesId="17" />
+    </Task>
+    <Task Name="Archimedes">
+      <Variable Name="XCoords" RecursiveEnable="2" EURangesId="14" />
+      <Variable Name="YCoords" RecursiveEnable="2" EURangesId="15" />
+    </Task>
+    <Task Name="SkylineMgm">
+      <Variable Name="Active" />
+      <Variable Name="BlockActivate" />
+      <Variable Name="BlockDeactivate" />
+      <Variable Name="BlockFunctions" />
+      <Variable Name="Cmd" RecursiveEnable="2" />
+      <Variable Name="ModulName" />
+      <Variable Name="SelectedModuleIndex" />
+      <Variable Name="SkylineNotification" />
+    </Task>
+    <Task Name="Heating">
+      <Variable Name="alarmHistoryStyle" />
+      <Variable Name="alarmListStyle" />
+      <Variable Name="isHeating" />
+      <Variable Name="Kachel" RecursiveEnable="2">
+        <Variable Name="Kachel[0]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[1]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[2]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[3]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[4]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[5]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[6]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[7]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[8]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+        <Variable Name="Kachel[9]">
+          <Variable Name="SetTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+          <Variable Name="CurrentTemp" EURangesId="13" EngineeringUnitId="3" ChangedCommonProperties="1024" />
+        </Variable>
+      </Variable>
+    </Task>
+    <Task Name="UseCase">
+      <Variable Name="basicLength" />
+      <Variable Name="basicPressure" />
+      <Variable Name="basicTemperature" />
+      <Variable Name="transformationIndex" />
+      <Variable Name="useCaseTransformation" />
+    </Task>
+    <Task Name="Paper">
+      <Variable Name="boolStart" />
+      <Variable Name="BOX_COUNTER" />
+      <Variable Name="productAuto" />
+      <Variable Name="productCount" />
+      <Variable Name="startBoxLift" />
+      <Variable Name="startSkiLift" />
+      <Variable Name="svgContent" />
+      <Variable Name="svgFilePath" />
+      <Variable Name="transform" />
+      <Variable Name="transformLift" />
+      <Variable Name="transformSki" />
+      <Variable Name="transitionTime" />
+    </Task>
+    <Task Name="Chart">
+      <Variable Name="chartValue" RecursiveEnable="2" EURangesId="18" EngineeringUnitId="3" />
+      <Variable Name="graphValue" RecursiveEnable="2" EURangesId="18" EngineeringUnitId="3" />
+      <Variable Name="StackedBarChart" RecursiveEnable="2" />
+    </Task>
+    <Task Name="mvClient">
+      <Variable Name="clientSlots" RecursiveEnable="2" />
+    </Task>
+    <Task Name="Table">
+      <Variable Name="myTable" RecursiveEnable="2" />
+      <Variable Name="selectedTableIndex" />
+    </Task>
+    <Task Name="VarList">
+      <Variable Name="Color" RecursiveEnable="2" />
+      <Variable Name="listBoxValues" />
+    </Task>
+    <Task Name="Simulation">
+      <Variable Name="ExpressionInC" />
+      <Variable Name="indicateStyle" />
+      <Variable Name="myTestBool" />
+      <Variable Name="myTestInt" />
+      <Variable Name="X" />
+      <Variable Name="Y" />
+      <Variable Name="maxLimit" EngineeringUnitId="3" />
+      <Variable Name="minLimit" EngineeringUnitId="3" />
+      <Variable Name="userLimitValue" EURangesId="19" />
+      <Variable Name="valueCel" EURangesId="20" EngineeringUnitId="3" />
+      <Variable Name="valuemm" EngineeringUnitId="4" />
+    </Task>
+    <Task Name="ProfileGen">
+      <Variable Name="configurationJSON" />
+      <Variable Name="Value1" EURangesId="22" />
+      <Variable Name="Value10" EURangesId="22" />
+      <Variable Name="Value11" EURangesId="22" />
+      <Variable Name="Value12" EURangesId="22" />
+      <Variable Name="Value13" EURangesId="22" />
+      <Variable Name="Value14" EURangesId="22" />
+      <Variable Name="Value15" EURangesId="22" />
+      <Variable Name="Value16" EURangesId="22" />
+      <Variable Name="Value17" EURangesId="22" />
+      <Variable Name="Value18" EURangesId="22" />
+      <Variable Name="Value19" EURangesId="22" />
+      <Variable Name="Value2" EURangesId="22" />
+      <Variable Name="Value20" EURangesId="22" />
+      <Variable Name="Value3" EURangesId="22" />
+      <Variable Name="Value4" EURangesId="22" />
+      <Variable Name="Value5" EURangesId="22" />
+      <Variable Name="Value6" EURangesId="22" />
+      <Variable Name="Value7" EURangesId="22" />
+      <Variable Name="Value8" EURangesId="22" />
+      <Variable Name="Value9" EURangesId="22" />
+      <Variable Name="X" RecursiveEnable="2" EURangesId="25" EngineeringUnitId="4" />
+      <Variable Name="X2" RecursiveEnable="2" EURangesId="25" EngineeringUnitId="4" />
+      <Variable Name="Y" RecursiveEnable="2" EURangesId="18" EngineeringUnitId="6" />
+      <Variable Name="Y2" RecursiveEnable="2" EURangesId="24" EngineeringUnitId="6" />
+    </Task>
+    <Task Name="ReportMgmt">
+      <Variable Name="DeleteReport" />
+      <Variable Name="DisplayFileName" />
+      <Variable Name="ReportLanguage" />
+      <Variable Name="SelectedFile" />
+      <Variable Name="MpReportCore_0">
+        <Variable Name="Generate" />
+      </Variable>
+      <Variable Name="DisplayFileNameIndex" />
+    </Task>
+    <Task Name="SmartSimu">
+      <Variable Name="currentOEE" />
+      <Variable Name="currentPerf" />
+      <Variable Name="emtptyOEE" />
+      <Variable Name="timeLineData" />
+    </Task>
+  </Module>
+</OpcUaSource>

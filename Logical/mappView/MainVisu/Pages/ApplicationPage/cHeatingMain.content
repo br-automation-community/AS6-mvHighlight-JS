@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cHeatingMain" guid="8856dca9-5c53-44d4-b1d7-fa8b429789ac" height="760" width="1600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.FlexBox" id="FlexBox1" top="109" left="25" width="341" height="516" zIndex="0" borderStyle="none" padding="0px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem1" zIndex="0" borderStyle="none" margin="0px" style="transparent">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl1" top="0" left="0" zIndex="0" contentId="cHeating_Mid1" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem2" zIndex="1" borderStyle="none" margin="0px" style="transparent">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl2" top="0" left="0" zIndex="0" contentId="cHeating_Mid2" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem3" zIndex="2" borderStyle="none" margin="0px" style="transparent">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl3" top="0" left="0" zIndex="0" contentId="cHeating_Mid3" deactivate="true" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.FlexBox" id="FlexBox2" top="109" left="415" width="341" height="516" zIndex="1" borderStyle="none" padding="0px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem4" zIndex="0" borderStyle="none" margin="0px" style="transparent">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl4" top="0" left="0" zIndex="0" contentId="cHeating_Right1" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem5" zIndex="1" borderStyle="none" margin="0px" style="transparent">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl5" top="0" left="0" zIndex="0" contentId="cHeating_Right2" deactivate="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.FlexBoxItem" id="FlexBoxItem6" zIndex="2" borderStyle="none" margin="0px" style="transparent">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ContentControl" id="ContentControl6" top="0" left="0" zIndex="0" contentId="cHeating_Right3" deactivate="true" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="109" left="784" width="795" height="435" zIndex="2" text="$IAT/Main/TempMonitor" borderStyle="none">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA1" top="0" left="0" width="100%" height="100%" zIndex="0" borderStyle="none" backColor="rgba(255, 255, 255, 0)">
+          <Properties>
+            <yAxis>
+              <Element id="yAxis1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+            </yAxis>
+            <xAxis>
+              <Element id="xAxis1" timeSpan="120" />
+            </xAxis>
+            <graph>
+              <Element id="graph1" yAxisReference="yAxis1" />
+              <Element id="graph2" yAxisReference="yAxis1" lineColor="rgba(255, 128, 0, 1)" />
+              <Element id="graph3" yAxisReference="yAxis1" lineColor="rgba(255, 255, 0, 1)" />
+              <Element id="graph4" yAxisReference="yAxis1" lineColor="rgba(255, 192, 192, 1)" />
+              <Element id="graph5" yAxisReference="yAxis1" lineColor="rgba(255, 224, 192, 1)" />
+              <Element id="graph6" yAxisReference="yAxis1" lineColor="rgba(255, 255, 192, 1)" />
+            </graph>
+            <cursor>
+              <Element id="cursor1" />
+            </cursor>
+          </Properties>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonControl" top="670" left="1520" width="80" height="80" zIndex="3" image="Media/SVGsymbols/Misc/Gallery.svg" imageHeight="64" imageWidth="64" mouseDownImageColor="rgba(255, 128, 0, 1)" style="transparent" />
+    <Widget xsi:type="widgets.brease.InfoBanner" id="InfoBanner1" top="560" left="0" width="1600" zIndex="4" docking="right" transitionCloseTime="500" transitionOpenTime="500" borderStyle="none" backColor="rgba(224, 224, 224, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.CheckBox" id="cbDay1" top="20" left="40" zIndex="0" text="$IAT/Main/Monday" value="true" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="cbDay2" top="60" left="40" zIndex="1" text="$IAT/Main/Tuesday" value="true" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="cbDay3" top="100" left="40" zIndex="2" text="$IAT/Main/Wednesday" value="true" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="cbDay4" top="140" left="40" zIndex="3" text="$IAT/Main/Thursday" value="true" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="cbDay5" top="20" left="280" zIndex="4" text="$IAT/Main/Friday" value="true" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="cbDay6" top="60" left="280" zIndex="5" text="$IAT/Main/Saturday" value="true" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="cbDay7" top="100" left="280" zIndex="6" text="$IAT/Main/Sunday" value="true" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niHour" top="20" left="600" width="80" height="60" zIndex="7" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':2}}" maxValue="23" value="7" style="InputLarge" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niHour1" top="20" left="700" width="80" height="60" zIndex="8" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':2}}" maxValue="59" style="InputLarge" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niHour2" top="20" left="800" width="80" height="60" zIndex="9" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':2}}" maxValue="59" style="InputLarge" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niHour3" top="100" left="600" width="80" height="60" zIndex="10" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':2}}" maxValue="23" value="22" style="InputLarge" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niHour4" top="100" left="700" width="80" height="60" zIndex="11" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':2}}" maxValue="59" style="InputLarge" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="niHour5" top="100" left="800" width="80" height="60" zIndex="12" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':2},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':2}}" maxValue="59" style="InputLarge" />
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="40" left="500" zIndex="13" text="$IAT/Main/from" />
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="120" left="500" zIndex="14" text="$IAT/Main/to" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="tg_IsHeating" top="25" left="1041" width="120" height="60" zIndex="15" mouseDownText="$IAT/Main/on" text="$IAT/Main/off" value="true" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonClose" top="4" left="1540" width="56" height="56" zIndex="16" text="X" style="Command" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.AlarmLine" id="AlarmLine1" top="0" left="0" width="1600" height="50" zIndex="5">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AlarmLineItem" id="AlarmLineItem1" width="334" zIndex="0" columnType="timestamp" />
+        <Widget xsi:type="widgets.brease.AlarmLineItem" id="AlarmLineItem2" width="1047" zIndex="1" />
+        <Widget xsi:type="widgets.brease.AlarmLineItem" id="AlarmLineItem3" width="101" zIndex="2" columnType="state" />
+        <Widget xsi:type="widgets.brease.AlarmLineItem" id="AlarmLineItem4" width="99" zIndex="3" columnType="severity" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

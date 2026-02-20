@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/AlarmTexts</prop>
+  </header>
+  <body>
+    <tu tuid="BoilerHeatingID">
+      <tuv xml:lang="de">
+        <seg>Temperatur in "Boiler heating" außerhalb des Limits. Aktueller Temperaturwert: {&amp;BoilerHeatingValue|.2f}{&amp;BoilerHeatingValue[UNIT=%s]}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature of "Boiler heating" is out of limit. Current temperature: {&amp;BoilerHeatingValue|.2f}{&amp;BoilerHeatingValue[UNIT=%s]}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BoilerPerLoadID">
+      <tuv xml:lang="de">
+        <seg>Temperatur in "Boiler permanent load" außerhalb des Limits. Aktueller Temperaturwert: {&amp;BoilerPerLoadValue|.2f}{&amp;BoilerPerLoadValue[UNIT=%s]}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature of "Boiler permanent load" is out of limit. Current temperature: {&amp;BoilerPerLoadValue|.2f}{&amp;BoilerPerLoadValue[UNIT=%s]}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ForwardHeatingID">
+      <tuv xml:lang="de">
+        <seg>Temperatur in "Forward heating" außerhalb des Limits. Aktueller Temperaturwert: {&amp;ForwardHeatingValue|.2f}{&amp;ForwardHeatingValue[UNIT=%s]}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature of "Forward heating" is out of limit. Current temperature: {&amp;ForwardHeatingValue|.2f}{&amp;ForwardHeatingValue[UNIT=%s]}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ForwardHeatID">
+      <tuv xml:lang="de">
+        <seg>Temperatur in "Forward heat" außerhalb des Limits. Aktueller Temperaturwert: {&amp;ForwardHeatValue|.2f}{&amp;ForwardHeatValue[UNIT=%s]}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature of "Forward heat" is out of limit. Current temperature: {&amp;ForwardHeatValue|.2f}{&amp;ForwardHeatValue[UNIT=%s]}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ReturnCoolingID">
+      <tuv xml:lang="de">
+        <seg>Temperatur in "Return cooling" außerhalb des Limits. Aktueller Temperaturwert: {&amp;ReturnCoolingValue|.2f}{&amp;ReturnCoolingValue[UNIT=%s]}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature of "Return cooling" is out of limit. Current temperature: {&amp;ReturnCoolingValue|.2f}{&amp;ReturnCoolingValue[UNIT=%s]}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ReturnCoolID">
+      <tuv xml:lang="de">
+        <seg>Temperatur in "Return cool" außerhalb des Limits. Aktueller Temperaturwert: {&amp;ReturnCoolValue|.2f}{&amp;ReturnCoolValue[UNIT=%s]}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature of "Return cool" is out of limit. Current temperature: {&amp;ReturnCoolValue|.2f}{&amp;ReturnCoolValue[UNIT=%s]}</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

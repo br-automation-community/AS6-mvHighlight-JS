@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gGroup" Type="mpcomunit">
+    <Group ID="Display">
+      <Group ID="Groups">
+        <Group ID="0">
+          <Property ID="Id" Value="Temperature" />
+          <Group ID="DisplayUnits">
+            <Group ID="Metric">
+              <Property ID="Code" Value="CEL" />
+              <Property ID="Namespace" />
+              <Property ID="Translate" />
+              <Group ID="Format">
+                <Property ID="decDigs" Value="-1" />
+                <Property ID="minDigs" Value="-1" />
+              </Group>
+            </Group>
+            <Group ID="Imperial">
+              <Property ID="Code" Value="FAH" />
+              <Property ID="Namespace" />
+              <Property ID="Translate" />
+              <Group ID="Format">
+                <Property ID="decDigs" Value="-1" />
+                <Property ID="minDigs" Value="-1" />
+              </Group>
+            </Group>
+            <Group ID="ImperialUS">
+              <Property ID="Code" Value="FAH" />
+              <Property ID="Namespace" />
+              <Property ID="Translate" />
+              <Group ID="Format">
+                <Property ID="decDigs" Value="-1" />
+                <Property ID="minDigs" Value="-1" />
+              </Group>
+            </Group>
+          </Group>
+          <Property ID="Pv" />
+        </Group>
+      </Group>
+      <Group ID="Datapoints">
+        <Group ID="0">
+          <Property ID="Id" Value="::Heating:Kachel[0].SetTemp" />
+          <Selector ID="DisplayUnits" Value="UnitGroup">
+            <Property ID="Unitgroup" Value="Temperature" />
+          </Selector>
+        </Group>
+        <Group ID="1">
+          <Property ID="Id" Value="::Heating:Kachel[1].SetTemp" />
+          <Selector ID="DisplayUnits" Value="UnitGroup">
+            <Property ID="Unitgroup" Value="Temperature" />
+          </Selector>
+        </Group>
+        <Group ID="2">
+          <Property ID="Id" Value="::Heating:Kachel[2].SetTemp" />
+          <Selector ID="DisplayUnits" Value="UnitGroup">
+            <Property ID="Unitgroup" Value="Temperature" />
+          </Selector>
+        </Group>
+        <Group ID="3">
+          <Property ID="Id" Value="::Heating:Kachel[3].SetTemp" />
+          <Selector ID="DisplayUnits" Value="UnitGroup">
+            <Property ID="Unitgroup" Value="Temperature" />
+          </Selector>
+        </Group>
+        <Group ID="4">
+          <Property ID="Id" Value="::Heating:Kachel[4].SetTemp" />
+          <Selector ID="DisplayUnits" Value="UnitGroup">
+            <Property ID="Unitgroup" Value="Temperature" />
+          </Selector>
+        </Group>
+        <Group ID="5">
+          <Property ID="Id" Value="::Heating:Kachel[5].SetTemp" />
+          <Selector ID="DisplayUnits" Value="UnitGroup">
+            <Property ID="Unitgroup" Value="Temperature" />
+          </Selector>
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

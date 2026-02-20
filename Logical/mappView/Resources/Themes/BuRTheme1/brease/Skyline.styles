@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Styles
+  id="Skyline" xmlns="http://www.br-automation.com/iat2015/styles/engineering/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	
+	
+	<Style
+    id="Off"
+    xsi:type="widgets.brease.SkylineModuleStyle"
+    backColor="#6F6A75"
+    mouseDownBackColor="#6F6A75" />
+	
+	<Style
+    id="Ready"
+    xsi:type="widgets.brease.SkylineModuleStyle"
+    backColor="#076D02"
+    mouseDownBackColor="#076D02" />
+	
+	<Style
+    id="Error"
+    xsi:type="widgets.brease.SkylineModuleStyle"
+    backColor="#870202"
+    mouseDownBackColor="#870202" />
+	
+	<Style
+    id="Warning"
+    xsi:type="widgets.brease.SkylineModuleStyle"
+    backColor="#FDFF00"
+    mouseDownBackColor="#FDFF00" />
+	
+</Styles>

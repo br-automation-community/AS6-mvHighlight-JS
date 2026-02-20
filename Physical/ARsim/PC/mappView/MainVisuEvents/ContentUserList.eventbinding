@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="ContentUserList" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="ContentUserList.UserList1.EnableChanged">
+      <Source xsi:type="widgets.brease.UserList.Event" contentRefId="ContentUserList" widgetRefId="UserList1" event="EnableChanged" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="ContentUserList" widgetRefId="UserLoggedOut">
+                <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="=NOT(value)" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentUserList" widgetRefId="ButtonCreateUser">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="=value" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2" deactivated="true">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentUserList" widgetRefId="ButtonDeleteUser">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="=value" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="ContentUserList" widgetRefId="ButtonModifyUser">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="=value" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_1">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUserList" widgetRefId="ButtonCreateUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.UserList.Action" contentRefId="ContentUserList" widgetRefId="UserList1">
+            <Method xsi:type="widgets.brease.UserList.Action.OpenAddUserDialog" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_2">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUserList" widgetRefId="ButtonModifyUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.UserList.Action" contentRefId="ContentUserList" widgetRefId="UserList1">
+            <Method xsi:type="widgets.brease.UserList.Action.OpenModifyUserDialog" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_3">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ContentUserList" widgetRefId="ButtonDeleteUser" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="widgets.brease.UserList.Action" contentRefId="ContentUserList" widgetRefId="UserList1">
+            <Method xsi:type="widgets.brease.UserList.Action.DeleteUser" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

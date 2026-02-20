@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="cHeatingMain" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Heating:Kachel[0].CurrentTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="cHeatingMain" widgetRefId="OnlineChartHDA1" attribute="graph[graph1].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Heating:Kachel[1].CurrentTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="cHeatingMain" widgetRefId="OnlineChartHDA1" attribute="graph[graph2].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Heating:Kachel[2].CurrentTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="cHeatingMain" widgetRefId="OnlineChartHDA1" attribute="graph[graph3].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Heating:Kachel[3].CurrentTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="cHeatingMain" widgetRefId="OnlineChartHDA1" attribute="graph[graph4].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Heating:Kachel[4].CurrentTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="cHeatingMain" widgetRefId="OnlineChartHDA1" attribute="graph[graph5].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Heating:Kachel[5].CurrentTemp" attribute="node" />
+<Target xsi:type="brease" contentRefId="cHeatingMain" widgetRefId="OnlineChartHDA1" attribute="graph[graph6].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="mapp" refId="gAlarmXCore" attribute="link" />
+<Target xsi:type="brease" contentRefId="cHeatingMain" widgetRefId="AlarmLine1" attribute="mpLink" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Heating:isHeating" attribute="value" />
+<Target xsi:type="brease" contentRefId="cHeatingMain" widgetRefId="tg_IsHeating" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

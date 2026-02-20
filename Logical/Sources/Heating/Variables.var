@@ -1,0 +1,11 @@
+VAR
+	Kachel : ARRAY[0..9] OF KachelType;
+	counter : INT;
+	i : INT;
+	isHeating : BOOL;
+	heating : BOOL;
+	j : INT;
+	k : INT;
+	alarmHistoryStyle : STRING[500];
+	alarmListStyle : STRING[500];
+END_VAR

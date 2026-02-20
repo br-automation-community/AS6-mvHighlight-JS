@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="cHeating_Right3" guid="1b9790d2-b9e6-4725-a7dd-5dedba1970d8" height="162" width="320" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.widgetlibrary_0.Kachel" id="Kachel1" top="0" left="0" zIndex="0" SubType="$IAT/Main/SubText3" KesselType="$IAT/Main/RücklaufType" />
+  </Widgets>
+</Content>

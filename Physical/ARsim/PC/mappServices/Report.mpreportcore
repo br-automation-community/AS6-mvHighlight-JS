@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gReport" Type="mpreportcore">
+    <Group ID="mapp.Gen">
+      <Property ID="Enable" Value="TRUE" />
+    </Group>
+    <Group ID="MpReport">
+      <Group ID="Settings">
+        <Property ID="ResourceDeviceName" Value="USER" />
+        <Group ID="LanguageDependent">
+          <Group ID="[0]">
+            <Property ID="Language" Value="en" />
+            <Property ID="Font" Value="0" />
+            <Property ID="DateTimePattern" Value="%Y-%m-%d %H:%M:%S" />
+            <Property ID="PrecisionDateTimePattern" Value="%Y-%m-%d %H:%M:%S,%L" />
+          </Group>
+          <Group ID="[1]">
+            <Property ID="Language" Value="de" />
+            <Property ID="Font" Value="0" />
+            <Property ID="DateTimePattern" Value="%Y-%m-%d %H:%M:%S" />
+            <Property ID="PrecisionDateTimePattern" Value="%Y-%m-%d %H:%M:%S,%L" />
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="PageLayouts">
+        <Group ID="[0]">
+          <Property ID="Name" Value="Default" />
+          <Property ID="PageFormat" Value="4" />
+          <Property ID="Orientation" Value="1" />
+          <Property ID="Margins" Value="1" />
+        </Group>
+      </Group>
+      <Group ID="Styles">
+        <Group ID="Text">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+            <Property ID="Style" Value="0" />
+            <Property ID="Size" Value="10" />
+            <Property ID="Color" Value="000000" />
+            <Property ID="Precision" Value="6" />
+          </Group>
+          <Group ID="[1]">
+            <Property ID="Name" Value="Header" />
+            <Property ID="Style" Value="1" />
+            <Property ID="Size" Value="20" />
+            <Property ID="Color" Value="FF9900" />
+            <Property ID="Precision" Value="6" />
+          </Group>
+        </Group>
+        <Group ID="Table">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+            <Property ID="BorderWidth" Value="1" />
+            <Property ID="Color" Value="000000" />
+            <Property ID="Padding" Value="1" />
+            <Property ID="HeadRowOnNewPage" Value="FALSE" />
+          </Group>
+        </Group>
+        <Group ID="Line">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+            <Property ID="Width" Value="1" />
+            <Property ID="Color" Value="000000" />
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="Components">
+        <Selector ID="[0]" Value="AlarmHistory">
+          <Property ID="Name" Value="AlarmHistory" />
+          <Property ID="AlarmHistoryLink" Value="gAlarmXHistory" />
+          <Property ID="MaximumEntries" Value="1000" />
+          <Property ID="EmptyListText" Value="No alarm history data available." />
+          <Property ID="TableStyle" Value="Default" />
+          <Property ID="TextStyle" Value="Default" />
+          <Group ID="SELECT">
+            <Group ID="[0]">
+              <Selector ID="Column" Value="TimeStamp" />
+              <Property ID="Width" Value="20" />
+              <Property ID="HorizontalAlign" Value="0" />
+              <Selector ID="TextStyleReference" Value="InheritedTextStyle" />
+              <Selector ID="Heading" Value="SingleText">
+                <Property ID="Text" Value="{$IAT/Alarm.Row.TimeStamp}" />
+                <Selector ID="TextStyleReference" Value="InheritedTextStyle" />
+              </Selector>
+            </Group>
+            <Group ID="[1]">
+              <Selector ID="Column" Value="Name" />
+              <Property ID="Width" Value="20" />
+              <Property ID="HorizontalAlign" Value="0" />
+              <Selector ID="TextStyleReference" Value="InheritedTextStyle" />
+              <Selector ID="Heading" Value="SingleText">
+                <Property ID="Text" Value="{$IAT/Alarm.Row.Name}" />
+                <Selector ID="TextStyleReference" Value="InheritedTextStyle" />
+              </Selector>
+            </Group>
+            <Group ID="[2]">
+              <Selector ID="Column" Value="Message" />
+              <Property ID="Width" Value="40" />
+              <Property ID="HorizontalAlign" Value="0" />
+              <Selector ID="TextStyleReference" Value="InheritedTextStyle" />
+              <Selector ID="Heading" Value="SingleText">
+                <Property ID="Text" Value="Message" />
+                <Selector ID="TextStyleReference" Value="InheritedTextStyle" />
+              </Selector>
+            </Group>
+            <Group ID="[3]">
+              <Selector ID="Column" Value="StateChange">
+                <Selector ID="DisplayAs" Value="Image">
+                  <Property ID="ActiveImage" Value="act.jpg" />
+                  <Property ID="InactiveImage" Value="inact.jpg" />
+                  <Property ID="AcknowledgeImage" Value="ack.jpg" />
+                  <Property ID="UnacknowledgeImage" Value="unack.jpg" />
+                  <Property ID="UpdateImage" />
+                </Selector>
+              </Selector>
+              <Property ID="Width" Value="20" />
+              <Property ID="HorizontalAlign" Value="1" />
+              <Selector ID="TextStyleReference" Value="InheritedTextStyle" />
+              <Selector ID="Heading" Value="SingleText">
+                <Property ID="Text" Value="{$IAT/Alarm.StateChange}" />
+                <Selector ID="TextStyleReference" Value="InheritedTextStyle" />
+              </Selector>
+            </Group>
+          </Group>
+          <Group ID="WHERE">
+            <Property ID="Connect" Value="#1 AND #2" />
+            <Group ID="[0]">
+              <Property ID="Column" Value="Severity" />
+              <Property ID="Operator" Value="gt" />
+              <Selector ID="CompareTo" Value="Value">
+                <Property ID="Value" Value="0" />
+              </Selector>
+            </Group>
+            <Group ID="[1]">
+              <Property ID="Column" Value="Severity" />
+              <Property ID="Operator" Value="lt" />
+              <Selector ID="CompareTo" Value="PV">
+                <Property ID="PV" Value="100" />
+              </Selector>
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="Contents">
+        <Group ID="[0]">
+          <Property ID="Name" Value="ContentAlarmHistory" />
+          <Selector ID="[0]" Value="Component">
+            <Property ID="Component" Value="AlarmHistory" />
+            <Property ID="HorizontalAlign" Value="0" />
+          </Selector>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="ContentHeader" />
+          <Selector ID="[0]" Value="Text">
+            <Property ID="Text" Value="{$ReportTexts/ReportHeader}" />
+            <Property ID="HorizontalAlign" Value="0" />
+            <Property ID="NewLine" Value="TRUE" />
+            <Property ID="TextStyle" Value="Header" />
+          </Selector>
+          <Selector ID="[1]" Value="DateTime">
+            <Selector ID="Source" Value="Current" />
+            <Property ID="HorizontalAlign" Value="0" />
+            <Property ID="NewLine" Value="TRUE" />
+            <Property ID="TextStyle" Value="Default" />
+          </Selector>
+          <Selector ID="[2]" Value="Line">
+            <Property ID="LineStyle" Value="Default" />
+          </Selector>
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Name" Value="ContentFooter" />
+          <Selector ID="[0]" Value="PageNumber">
+            <Property ID="PageNumSnippet" Value="{$ReportTexts/ReportFooter}" />
+            <Property ID="HorizontalAlign" Value="1" />
+            <Property ID="NewLine" Value="TRUE" />
+            <Property ID="TextStyle" Value="Default" />
+          </Selector>
+        </Group>
+      </Group>
+      <Group ID="Reports">
+        <Group ID="[0]">
+          <Property ID="Name" Value="AlarmHistoryReport" />
+          <Group ID="Settings">
+            <Property ID="OwnerPassword" />
+            <Property ID="UserPassword" />
+            <Property ID="AllowPrint" Value="TRUE" />
+            <Property ID="AllowCopy" Value="FALSE" />
+            <Property ID="AllowEdit" Value="FALSE" />
+          </Group>
+          <Property ID="PageLayout" Value="Default" />
+          <Property ID="Header" Value="ContentHeader" />
+          <Property ID="Footer" Value="ContentFooter" />
+          <Group ID="[0]">
+            <Property ID="StartOnNewPage" Value="FALSE" />
+            <Group ID="Heading">
+              <Property ID="Text" />
+              <Property ID="HorizontalAlign" Value="0" />
+              <Property ID="TextStyle" />
+            </Group>
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentAlarmHistory" />
+              <Property ID="Width" Value="100" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+    <Selector ID="Alarms" Value="MpAlarmX">
+      <Group ID="mapp.AlarmX.Core.Configuration">
+        <Group ID="[0]">
+          <Property ID="Name" Value="GenerateFailed" />
+          <Property ID="Message" Value="{$BR/mapp/MpReportCore/Alarms/GenerateFailed}" />
+          <Property ID="Code" Value="0" />
+          <Property ID="Severity" Value="1" />
+          <Selector ID="Behavior" Value="EdgeAlarm">
+            <Property ID="AutoReset" Value="TRUE" />
+            <Property ID="Acknowledge" Value="1" />
+            <Property ID="Confirm" Value="0" />
+            <Property ID="MultipleInstances" Value="TRUE" />
+            <Property ID="ReactionWhilePending" Value="TRUE" />
+            <Property ID="Async" Value="FALSE" />
+            <Group ID="Recording">
+              <Property ID="InactiveToActive" Value="TRUE" />
+              <Property ID="ActiveToInactive" Value="FALSE" />
+              <Property ID="UnacknowledgedToAcknowledged" Value="TRUE" />
+              <Property ID="UnconfirmedToConfirmed" Value="TRUE" />
+            </Group>
+          </Selector>
+          <Property ID="Disable" Value="FALSE" />
+          <Property ID="AdditionalInformation1" />
+          <Property ID="AdditionalInformation2" />
+        </Group>
+      </Group>
+    </Selector>
+  </Element>
+</Configuration>

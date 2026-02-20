@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ContentHDA" guid="09e7f65d-ef37-4977-91a7-ef736a77c7c4" height="600" width="1200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.OnlineChartHDA" id="OnlineChartHDA1" top="1" left="2" width="1027" height="560" zIndex="0" backColor="rgba(255, 255, 255, 0)" chartColor="rgba(0, 0, 0, 1)">
+      <Properties>
+        <yAxis>
+          <Element id="yAxis1" rangeMode="fromSource" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+        </yAxis>
+        <xAxis>
+          <Element id="xAxis1" />
+        </xAxis>
+        <graph>
+          <Element id="graph1" yAxisReference="yAxis1" />
+          <Element id="graph2" yAxisReference="yAxis1" lineColor="rgba(255, 128, 0, 1)" />
+          <Element id="graph3" yAxisReference="yAxis1" lineColor="rgba(255, 255, 0, 1)" />
+          <Element id="graph4" yAxisReference="yAxis1" lineColor="rgba(255, 192, 192, 1)" />
+          <Element id="graph5" yAxisReference="yAxis1" lineColor="rgba(255, 224, 192, 1)" />
+          <Element id="graph6" yAxisReference="yAxis1" lineColor="rgba(255, 255, 192, 1)" />
+        </graph>
+        <cursor>
+          <Element id="cursor1" />
+        </cursor>
+      </Properties>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="ButtonFreeze" top="532" left="771" width="60" height="60" zIndex="1" image="Media/SVGSymbols/Media/Stop.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" mouseDownBackColor="rgba(153, 180, 209, 1)" style="Command" />
+    <Widget xsi:type="widgets.brease.Button" id="ButtonUnFreeze" top="532" left="855" width="60" height="60" zIndex="2" image="Media/SVGSymbols/Media/Play.svg" imageColor="rgba(255, 255, 255, 1)" mouseDownImageColor="rgba(255, 255, 255, 1)" disabledImageColor="rgba(224, 224, 224, 1)" mouseDownBackColor="rgba(153, 180, 209, 1)" enable="false" style="Command" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="NumericInput1" top="562" left="385" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" maxValue="600" minValue="10" value="60" />
+  </Widgets>
+</Content>
