@@ -15,16 +15,16 @@ This repository ensures that the project remains available to the community, eve
 
 ---
 
-## 🚦 Project Status
+## Project Status
 
-!!! warning "Important Notice"
+"Important Notice"
 
     - This project is provided **"as is"**
     - It is **no longer maintained by B&R R&D**
     - It is **not part of the official Automation Studio 6 Samples**
     - It has been made available to the community via the **B&R Community**
 
-From now on, the project is **community managed**.
+From now on, the project is **B&R Community managed**.
 
 ---
 
@@ -38,7 +38,7 @@ If you would like to:
 - Propose improvements  
 - Discuss new features  
 
-Please use the **B&R Community platform** for discussion.
+Please use the **B&R Community platform** for discussion. (B&R Community -> CoLab projects)[https://community.br-automation.com/t/as6-mvhighlight-js/10236]
 
 ### Development Workflow
 
